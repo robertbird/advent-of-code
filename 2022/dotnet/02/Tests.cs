@@ -142,7 +142,7 @@ namespace _02
         {
             string fileInput = Utilities.FileHelper.GetFileContents("TestFiles/puzzle-input.txt");
             var result = GameHelper.PartTwoCalculateScore(fileInput);
-            Assert.That(result, Is.EqualTo(11449));
+            Assert.That(result, Is.EqualTo(13187));
         }
 
     }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace Utilities
@@ -14,6 +16,16 @@ namespace Utilities
                 readContents = streamReader.ReadToEnd();
             }
             return readContents;
+        }
+
+        public static List<string> GetFileAsRows(string relativePath)
+        {
+            var input = GetFileContents(relativePath);
+
+            return input.Split("\r\n")
+                .Where(x => !string.IsNullOrEmpty(x))
+                .ToList();
+
         }
     }
 }
