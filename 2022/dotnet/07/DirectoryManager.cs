@@ -14,7 +14,7 @@ namespace _07
 
         public Stack<Folder> Folders { get; private set; } = new Stack<Folder>();
 
-        public Folder RootFolder { get; private set; }
+        public Folder RootFolder { get; private set; } = new Folder();
 
         public void ParseInput(string filePath)
         {

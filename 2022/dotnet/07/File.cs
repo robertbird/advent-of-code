@@ -31,7 +31,7 @@
         public class File
         {
             public string Name { get; set; } = "";
-            public Folder InFolder { get; set; }
+            public Folder InFolder { get; set; } = new Folder();
             public int Size { get; set; }
 
             public override string ToString()

@@ -67,7 +67,7 @@ namespace _05
             }
 
             // setup initial items
-            string line = string.Empty; 
+            string? line = string.Empty; 
             while (Setup.TryPop(out line))
             {
                 char[] lineArr = line.ToCharArray();

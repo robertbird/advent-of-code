@@ -3,7 +3,7 @@
     public class RucksackManager
     {
         public List<int> Priorities { get; set; } = new List<int>();
-        private List<string> Contents; 
+        private List<string> Contents = new List<string>(); 
 
         public RucksackManager() { }
 

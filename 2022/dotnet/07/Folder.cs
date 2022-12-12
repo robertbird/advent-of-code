@@ -6,7 +6,7 @@
         {
             // Folders - name/total-size/parent-folder/child-folders/files
             public string Name { get; set; } = "";
-            public Folder InFolder { get; set; }
+            public Folder InFolder { get; set; } = new Folder();
             public int Depth { get; set; }
 
             public int TotalSize { get; set; }
